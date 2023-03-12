@@ -32,13 +32,13 @@ async function gameInit() {
         playerStat: false
     };
 
-    let currentBullet, turn = false;
+    let currentBullet, turn = true;
     while (game.playing) {
         turn = !turn;
         if (!turn) {
             console.log("It's your turn... 💣");
             chamber = spinchamber(chamber);
-            sleep(500);
+            sleep(2000);
             currentBullet = chamber[0];
             if (currentBullet) {
                 console.log("You Lose!!! 😈");
@@ -47,11 +47,12 @@ async function gameInit() {
                 continue;
             }
             console.log("You are safe... For now 👿");
+            sleep(2000);
             continue;
         }
         console.log("It's my turn... 💣");
         chamber = spinchamber(chamber);
-        sleep(500);
+        sleep(2000);
         currentBullet = chamber[0];
         if (currentBullet) {
             console.log("I lose 😕");
@@ -59,11 +60,12 @@ async function gameInit() {
             continue;
         }
         console.log("The game continues 😈");
+        sleep(2000);
     }
     console.log("Well that was fun, wasn't it?");
     if (game.playerStat) {
         console.log("But it seems you can't play again... 😈");
-        sleep(500);
+        sleep(1000);
         console.log("Bye forever 😈");
         rl.close();
         process.exit();

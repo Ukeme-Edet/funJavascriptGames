@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.game-view {
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 1px solid gray;
+    transition: all .25s ease-in;
+}
+
+.alive {
+    background: black;
+}

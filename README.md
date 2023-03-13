@@ -10,6 +10,10 @@ The following games are currently included in this repository:
 
 The classic javascript implementation of the actual russian roulette game.
 
+### 2. Conway's Game Of Life
+
+The classic javascript implementation of Conway's game of life... It's quite intresting to watch the patters emerge and fade.
+
 ## Getting Started
 
 To play any of these games, simply clone the repository with `git clone` and open the HTML file of the game you wish to play in your web browser. 
